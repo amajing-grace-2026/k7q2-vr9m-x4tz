@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0b4f9c">
+  <title>Visit Report</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="brand/ikon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="brand/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><img src="brand/ikon.svg" alt=""><span>Visit Report</span></div>
+    <button class="sync" id="sync" type="button" data-act="flush" hidden></button>
+  </header>
+  <main id="view" class="view"></main>
+  <nav class="tabs" id="tabs" hidden>
+    <a href="#home" data-tab="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Hari ini</span></a>
+    <a href="#stores" data-tab="stores"><svg viewBox="0 0 24 24"><path d="M4 4h16l1 5a3 3 0 0 1-5 2 3 3 0 0 1-4 0 3 3 0 0 1-4 0 3 3 0 0 1-5-2zM5 13v7h14v-7"/></svg><span>Toko</span></a>
+    <a href="#report" data-tab="report"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM9 12h7M9 16h7M9 8h3"/></svg><span>Laporan</span></a>
+    <a href="#more" data-tab="more"><svg viewBox="0 0 24 24"><path d="M5 12h.01M12 12h.01M19 12h.01"/></svg><span>Lainnya</span></a>
+  </nav>
+  <div class="modal" id="modal" hidden><div class="modal-card" id="modal-card"></div></div>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="core.js"></script>
+  <script src="demo-adapter.js"></script>
+  <script src="xlsx.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js'); });
+  </script>
+</body>
+</html>

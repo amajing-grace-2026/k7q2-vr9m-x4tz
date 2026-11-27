@@ -1,0 +1,7 @@
+# berisi PIN & panduan pribadi - jangan pernah ke GitHub
+apps-script/
+PANDUAN.md
+*.zip
+*.xlsx
+*.csv
+data/
