@@ -1,5 +1,5 @@
-/* Service worker: simpan kerangka aplikasi agar bisa dibuka offline. Data (API) selalu dari server. */
-var CACHE_NAME = 'visit-report-v1';
+﻿/* Service worker: simpan kerangka aplikasi agar bisa dibuka offline. Data (API) selalu dari server. */
+var CACHE_NAME = 'visit-report-v2';
 var SHELL = ['./', 'index.html', 'style.css', 'app.js', 'core.js', 'xlsx.js', 'demo-adapter.js', 'config.js', 'manifest.json',
   'brand/ikon.svg', 'brand/ikon-192.png'];
 

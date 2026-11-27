@@ -202,6 +202,7 @@
     var r = route();
     if (!S.token && r.name !== 'login') { location.hash = '#login'; return; }
     $('#tabs').hidden = r.name === 'login';
+    document.body.classList.toggle('nonav', r.name === 'login');
     $$('#tabs a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-tab') === (r.name === 'visit' ? '' : r.name)); });
     var v = $('#view');
     v.classList.toggle('wide', r.name === 'report');

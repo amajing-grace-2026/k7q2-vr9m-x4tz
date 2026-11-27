@@ -148,4 +148,6 @@ table.g td.p, table.g td.n { text-align: right; }
   .savebar { bottom: 0; }
   .toast { bottom: 24px; }
   .view { padding-top: 22px; }
+  body.nonav { padding-left: 0; }
+  body.nonav .top { padding-left: 16px; }
 }
